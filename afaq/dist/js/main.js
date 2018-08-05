@@ -3,7 +3,7 @@
 $(document).ready(function () {
     // scroll
     var flyHeader = 200;
-    var flyclass = "fixed-top position-fixed animated fadeInDown bg-mydark"
+    var flyclass = "fixed-top position-fixed animated fadeInDown fly"
     $(window).scroll(function () {
         var scroll = getCurrentScroll();
         if (scroll >= flyHeader) {
@@ -12,7 +12,7 @@ $(document).ready(function () {
             //            $('.logo img').addClass('whitetxt');
 
         } else {
-            $('#thenav').removeClass(flyclass).addClass("animated");
+            $('#thenav').removeClass(flyclass);
             $('.logo').removeClass('whitetxt');
         }
 
@@ -68,6 +68,20 @@ $(document).ready(function () {
     });
 
 });
+$( function() {
+    $('#price-range').slider({
+        range: true,
+        min: 0,
+        max: 1000,
+        values: [0, 1000],
+        slide: function(event, ui) {
+            $('#price-min span').text(ui.values[0]);
+           $('#price-max span').text(ui.values[1]);
+        }
+    });
+});
+
+
 function updateClock() {
     // set the content of the element with the ID time to the formatted string
     $(".timenow").text(new Date(new Date().getTime()).toLocaleTimeString());

@@ -12,14 +12,10 @@
   background: #4c4343; }
 
 .nav-link {
-  color: #eeeeee;
+  color: #afafaf;
   font-weight: bold; }
 
 .carousel-control-prev, .carousel-control-next {
   width: 9%; }
-
-.nav-link {
-  color: #f8f9fa;
-  font-weight: bold; }
 
 /*# sourceMappingURL=full-slider.css.map */
