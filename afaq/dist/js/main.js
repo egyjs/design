@@ -71,9 +71,9 @@ $(document).ready(function () {
 $( function() {
     $('#price-range').slider({
         range: true,
-        min: 0,
-        max: 1000,
-        values: [0, 1000],
+        min: 10000,
+        max: 15000000,
+        values: [10000, 15000000],
         slide: function(event, ui) {
             $('#price-min span').text(ui.values[0]);
            $('#price-max span').text(ui.values[1]);
