@@ -2,7 +2,9 @@
 body {
   background: #eee;
   color: #585858;
-  font-family: "Cabin", sans-serif;
-}
+  font-family: 'Cabin', sans-serif; }
+
+.navbar-brand img {
+  height: 90px; }
 
 /*# sourceMappingURL=main.css.map */
