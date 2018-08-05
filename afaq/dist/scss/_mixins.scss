@@ -1,0 +1,6 @@
+@mixin transition($p){
+    transition: $p;
+    -moz-transition: $p;
+    -o-transition: $p;
+    -webkit-transition: $p;
+}
