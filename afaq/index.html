@@ -15,6 +15,7 @@
     <link rel="icon" href="dist/imgs/logo.png">
 
     <link rel="stylesheet" href="dist/css/bootstraps.min.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="dist/css/icofont.min.css">
     <link rel="stylesheet" href="dist/css/full-slider.css">
@@ -22,53 +23,65 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg text-white fixed-top ">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="dist/imgs/ic_logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link " href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+<nav id="navigation"class="">
+    <nav class="navbar navbar-dark text-white" id="navinfo">
+        <div class="container">
+                <div class="col-md-6">
+                    <i class="icofont" >ui_clock</i> <span class="timenow"></span>
+                </div>
+            <div class="col-md-6">
+                <i class="icofont" >location_pin</i> <span> Egypt,cairo in NewYork City</span>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+    <nav class="navbar navbar-expand text-white" id="thenav">
+        <div class="container">
 
-<header>
+            <a class="navbar-brand" href="#"><img src="dist/imgs/ic_logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+<header id="slide">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('http://placehold.it/900x300')">
+            <div class="carousel-item active" style="background-image: url('https://i.ytimg.com/vi/V9JaHsPQ1rU/maxresdefault.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>First Slide</h3>
                     <p>This is a description for the first slide.</p>
                 </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-item" style="background-image: url('https://static.pulse.ng/img/incoming/origs6275552/5465568784-w644-h429/Selena-Gomez2-home-89c5db-1024x683.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Second Slide</h3>
                     <p>This is a description for the second slide.</p>
                 </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-item" style="background-image: url('http://vanmag.com/wp-content/uploads/2017/06/SEGAL-1.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Third Slide</h3>
                     <p>This is a description for the third slide.</p>

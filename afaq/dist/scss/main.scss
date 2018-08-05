@@ -1,6 +1,10 @@
 @import "mixins";
+@import "var";
 @import url('https://fonts.googleapis.com/css?family=Changa|Dancing+Script|Do+Hyeon|Doppio+One|Pacifico|Tajawal');
 
+*{
+  transition: all 0.3s ease-out;
+}
 body {
   background: #eee;
   color: #585858;
@@ -10,4 +14,18 @@ body {
   img{
     height: 90px;
   }
+}
+#slide {
+  margin-top: 50px;
+}
+
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.bg-mydark{
+  background: $darktrans;
 }
